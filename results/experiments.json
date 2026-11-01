@@ -1,0 +1,105 @@
+{
+  "DATA": "synthetic workloads (seed 0), 12 random processes",
+  "scheduling_averages": {
+    "FCFS": {
+      "waiting": 39.417,
+      "turnaround": 49,
+      "response": 39.417,
+      "context_switches": 11,
+      "cpu_utilization": 0.991,
+      "makespan": 116
+    },
+    "SJF": {
+      "waiting": 31.583,
+      "turnaround": 41.167,
+      "response": 31.583,
+      "context_switches": 11,
+      "cpu_utilization": 0.991,
+      "makespan": 116
+    },
+    "SRTF": {
+      "waiting": 31.583,
+      "turnaround": 41.167,
+      "response": 31.25,
+      "context_switches": 12,
+      "cpu_utilization": 0.991,
+      "makespan": 116
+    },
+    "RR q=2": {
+      "waiting": 61.917,
+      "turnaround": 71.5,
+      "response": 9.167,
+      "context_switches": 58,
+      "cpu_utilization": 0.991,
+      "makespan": 116
+    },
+    "RR q=8": {
+      "waiting": 50.667,
+      "turnaround": 60.25,
+      "response": 29.833,
+      "context_switches": 17,
+      "cpu_utilization": 0.991,
+      "makespan": 116
+    },
+    "Priority": {
+      "waiting": 36.417,
+      "turnaround": 46,
+      "response": 36.417,
+      "context_switches": 11,
+      "cpu_utilization": 0.991,
+      "makespan": 116
+    },
+    "Priority (preemptive)": {
+      "waiting": 45.333,
+      "turnaround": 54.917,
+      "response": 24.083,
+      "context_switches": 70,
+      "cpu_utilization": 0.991,
+      "makespan": 116
+    }
+  },
+  "paging": {
+    "textbook_20_refs_3_frames_faults": {
+      "fifo": 15,
+      "lru": 12,
+      "clock": 14,
+      "optimal": 9
+    },
+    "belady_FIFO_faults_by_frames": {
+      "3": 9,
+      "4": 10,
+      "5": 5
+    },
+    "belady_LRU_faults_by_frames": {
+      "3": 10,
+      "4": 8,
+      "5": 5
+    },
+    "locality_trace_480_refs_fault_rate_by_frames": {
+      "3": {
+        "fifo": 0.385,
+        "lru": 0.381,
+        "clock": 0.396,
+        "optimal": 0.252
+      },
+      "5": {
+        "fifo": 0.083,
+        "lru": 0.077,
+        "clock": 0.079,
+        "optimal": 0.075
+      },
+      "8": {
+        "fifo": 0.069,
+        "lru": 0.071,
+        "clock": 0.069,
+        "optimal": 0.069
+      },
+      "12": {
+        "fifo": 0.069,
+        "lru": 0.069,
+        "clock": 0.069,
+        "optimal": 0.06
+      }
+    }
+  }
+}

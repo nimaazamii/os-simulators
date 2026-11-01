@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "os-simulators"
+version = "0.1.0"
+description = "Operating-system simulators: CPU scheduling (FCFS, SJF, SRTF, RR, priority) and virtual memory (FIFO, LRU, OPT, Clock, TLB)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Nima Azami" }]
+dependencies = []
+keywords = ["operating-systems", "scheduling", "paging", "simulator"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
